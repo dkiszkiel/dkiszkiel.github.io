@@ -158,7 +158,7 @@ function drawStave() {
     var formatter = new Vex.Flow.Formatter();
 
     // Configure the rendering context.
-    renderer.resize(500, 500);
+    renderer.resize(500, 300);
     var context = renderer.getContext();
     context.setFont("Arial", 10, "").setBackgroundFillStyle("#eed");
 
