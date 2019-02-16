@@ -110,7 +110,8 @@ function notesFromMidiNumbers(midiNumbers) {
 function printNotes(midiNumbers) {
     var div = document.getElementById("pressed");
     var names = fullNoteNames(midiNumbers);
-    div.innerHTML = names;
+    var string = names.flat().join(", ");
+    div.innerHTML = string;
 }
 
 function guessIsCorrect() {
